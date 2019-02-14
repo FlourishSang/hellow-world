@@ -1,0 +1,14 @@
+Utils包中包含四个util工具类：
+IpParsingUtil：用于解析ip的类，（将ip地址解析为地域信息）
+        包含纯真数据库的ip解析方法ipParser1和淘宝ip的解析方法ipParser2
+        以及一个解析完ip后用于封装解析信息的内部类RegionInfo
+IPSeeker：获取文件的ip的地址。。。。
+
+UserAgentParserUtil：解析日志信息 （userAgent:浏览器名称、版本，操作系统名称、版本）
+         包含解析userAgnet的方法，封装AgentInfo信息的内部类
+LogParserUtil：解析useraGent的工具类
+         包含一个工具方法：parseLog：获取日志，并拆分日志放入数组遍历，然后通过判断调用三个方法进行分别处理
+         以及三个具体分别处理日志中的ip,浏览器，参数列表的方法
+            方法一：handleAgent 处理浏览器信息，将获取到的浏览器信息放入毛集合
+            方法二：handleIp 处理ip的信息。。。
+            方法三：处理参数列表，将参数列表放入map集合中

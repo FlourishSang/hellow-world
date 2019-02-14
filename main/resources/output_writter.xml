@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    <property>
+        <name>writter_new_user</name>
+        <value>com.phone.analysis.mapreduce.NewUser.NewUserOutputWriter</value>
+    </property>
+    <property>
+        <name>writter_browser_new_user</name>
+        <value>com.phone.analysis.mapreduce.NewUser.NewUserOutputWriter</value>
+    </property>
+
+    <property>
+        <name>writter_active_user</name>
+        <value>com.phone.analysis.mapreduce.NewUser.NewUserOutputWriter</value>
+    </property>
+
+    <property>
+        <name>writter_browser_active_user</name>
+        <value>com.phone.analysis.mapreduce.ActiveUser.ActiveUserOutputWriter</value>
+    </property>
+
+    <property>
+    <name>writter_active_member</name>
+    <value>com.phone.analysis.mapreduce.ActiveMember.ActiveMemberOutputWriter</value>
+</property>
+
+    <property>
+        <name>writter_browser_active_member</name>
+        <value>com.phone.analysis.mapreduce.ActiveMember.ActiveMemberOutputWriter</value>
+    </property>
+
+    <property>
+        <name>writter_new_member</name>
+        <value>com.phone.analysis.mapreduce.NewMember.NewMemberOutputWriter</value>
+    </property>
+
+    <property>
+        <name>writter_browser_new_member</name>
+        <value>com.phone.analysis.mapreduce.NewMember.NewMemberOutputWriter</value>
+    </property>
+
+    <property>
+        <name>writter_new_total_user</name>
+        <value>com.phone.analysis.mapreduce.NewTotalUser.NewTotalUserOutputWriter</value>
+    </property>
+
+    <property>
+        <name>writter_browser_new_total_user</name>
+        <value>com.phone.analysis.mapreduce.TotalMember.TotalMemberOutputWriter</value>
+    </property>
+
+    <property>
+        <name>writter_total_member</name>
+        <value>com.phone.analysis.mapreduce.TotalMember.TotalMemberOutputWriter</value>
+    </property>
+
+    <property>
+        <name>writter_browser_total_member</name>
+        <value>com.phone.analysis.mapreduce.NewTotalMember.TotalMemberOutputWriter</value>
+    </property>
+
+
+
+    <property>
+        <name>writter_member_info</name>
+        <value>com.phone.analysis.mapreduce.ActiveMember.NewMemberOutputWritter</value>
+    </property>
+
+    <property>
+        <name>writter_session</name>
+        <value>com.phone.analysis.mapreduce.SessionAnalysis.SessionOutputWriter</value>
+    </property>
+
+    <property>
+        <name>writter_browser_session</name>
+        <value>com.phone.analysis.mapreduce.SessionAnalysis.SessionOutputWriter</value>
+    </property>
+
+    <property>
+    <name>writter_hour_active_user</name>
+    <value>com.phone.analysis.mapreduce.HourlyActiveUser.HourlyActiveUserOutputWriter</value>
+</property>
+    <!--自己额外加的-->
+    <property>
+        <name>writter_browser_hour_active_user</name>
+        <value>com.phone.analysis.mapreduce.HourlyActiveUser.HourlyActiveUserOutputWriter</value>
+    </property>
+
+
+    <property>
+        <name>writter_local_info</name>
+        <value>com.phone.analysis.mapreduce.LocationInfo.LocationOutputWriter</value>
+    </property>
+
+    <property>
+        <name>writter_local_info_nm</name>
+        <value>com.phone.analysis.mapreduce.LocationInfoWithNewMember.LocationNmOutputWriter</value>
+    </property>
+
+</configuration>

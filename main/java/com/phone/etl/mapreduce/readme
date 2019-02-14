@@ -1,0 +1,13 @@
+数据清洗逻辑待梳理
+Etl2HdfsDriver：驱动类
+
+Etl2HdfsMapper：mapper端
+
+LogWritable ：自定义数据类型
+
+DateEnum ：日期枚举器
+
+GlobleConstants 常量中的 RUNNING_DATE
+
+//全局的util
+TimeUtil
