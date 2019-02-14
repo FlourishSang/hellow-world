@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+
+<!--指定块的副本数，默认是3-->
+<property>
+<name>dfs.replication</name>
+<value>3</value>
+</property>
+<property>
+<name>dfs.blocksize</name>
+<value>134217728</value>
+</property>
+<!--指定namenode的元数据目录-->
+<property>
+<name>dfs.namenode.name.dir</name>
+<value>/home/hadoopdata/dfs/name</value>
+</property>
+
+<!--指定datanode存储数据目录-->
+<property>
+<name>dfs.datanode.data.dir</name>
+<value>/home/hadoopdata/dfs/data</value>
+</property>
+
+<!--指定secondarynamenode的检测点目录-->
+<property>
+<name>fs.checkpoint.dir</name>
+<value>/home/hadoopdata/dfs/checkpoint/cname</value>
+</property>
+
+<!--edit的数据存储目录-->
+<property>
+<name>fs.checkpoint.edits.dir</name>
+<value>/home/hadoopdata/dfs/checkpoint/edit</value>
+</property>
+
+<!--指定namenode的webui监控端口-->
+<property>
+<name>dfs.http.address</name>
+<value>hadoop:50070</value>
+</property>
+
+<!--指定secondarynamenode的webui监控端口-->
+<property>
+<name>dfs.secondary.http.address</name>
+<value>hadoop02:50090</value>
+</property>
+
+<!--是否开启webhdfs的-->
+<property>
+<name>dfs.webhdfs.enabled</name>
+<value>true</value>
+</property>
+
+<!--是否开启hdfs的权限-->
+<property>
+<name>dfs.permissions</name>
+<value>false</value>
+</property>
+
+<!--配置虚拟服务名
+<property>
+
+  <name>dfs.nameservices</name>
+
+  <value>qianfeng</value>
+
+</property>
+
+为虚拟服务名指定namenode别名
+<property>
+
+  <name>dfs.ha.namenodes.qianfeng</name>
+
+  <value>nn1,nn2</value>
+
+</property>-->
+
+
+<!--为namenode别名指定通信地址
+
+<property>
+
+  <name>dfs.namenode.rpc-address.qianfeng.nn1</name>
+
+  <value>hadoop:9000</value>
+
+</property>
+
+<property>
+
+  <name>dfs.namenode.rpc-address.qianfeng.nn2</name>
+
+  <value>hadoop02:9000</value>
+
+</property>-->
+
+<!--配置nn1、nn2的web ui监控地址
+
+<property>
+
+  <name>dfs.namenode.http-address.qianfeng.nn1</name>
+
+  <value>hadoop:50070</value>
+
+</property>
+
+<property>
+
+  <name>dfs.namenode.http-address.qianfeng.nn2</name>
+
+  <value>hadoop02:50070</value>
+
+</property>-->
+
+<!--配置journalnode通信地址
+
+<property>
+
+  <name>dfs.namenode.shared.edits.dir</name>
+
+  <value>qjournal://hadoop:8485;hadoop02:8485;hadoop03:8485/qianfeng</value>
+
+</property>-->
+
+<!--配置失败转移的java类
+
+<property>
+
+  <name>dfs.client.failover.proxy.provider.qianfeng</name>
+
+  <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+
+</property>-->
+
+<!--防止脑裂
+
+    <property>
+
+      <name>dfs.ha.fencing.methods</name>
+
+      <value>sshfence</value>
+
+    </property>
+
+    <property>
+      <name>dfs.ha.fencing.ssh.private-key-files</name>
+      <value>/root/.ssh/id_rsa</value>
+    </property>-->
+
+<!--设置ssh fencing操作超时时间
+
+    <property>
+
+      <name>dfs.ha.fencing.ssh.connect-timeout</name>
+
+      <value>30000</value>
+
+    </property>-->
+
+<!--存储journalnode本地状态
+
+<property>
+
+  <name>dfs.journalnode.edits.dir</name>
+
+  <value>/home/hdfsha/journalnode/data</value>
+
+</property>-->
+
+<!--是否开启自动失败转移
+
+ <property>
+
+   <name>dfs.ha.automatic-failover.enabled</name>
+
+   <value>true</value>
+
+ </property>
+
+<property>
+<name>dfs.blocksize</name>
+<value>134217728</value>
+</property>
+-->
+
+	
+</configuration>
